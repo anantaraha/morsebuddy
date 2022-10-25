@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MorseBuddy</string>
+    <string name="start_and_stop_record">Start and Stop record</string>
+    <string name="cannot_translate">Cannot translate.</string>
+    <string name="adjust_the_baseline_slider">Adjust the baseline slider to refine translation.</string>
+    <string name="camera_morse">Camera morse</string>
+    <string name="description_camera_morse">Capture light signals with your camera and convert them to morse code.</string>
+</resources>

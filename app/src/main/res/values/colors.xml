@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="cyan_900">#006064</color>
+    <color name="cyan_800">#00838F</color>
+    <color name="cyan_700">#0097A7</color>
+    <color name="cyan_600">#00ACC1</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="cyan_400">#26C6DA</color>
+    <color name="cyan_300">#4DD0E1</color>
+    <color name="cyan_200">#80DEEA</color>
+    <color name="cyan_100">#B2EBF2</color>
+    <color name="cyan_50">#E0F7FA</color>
+
+    <color name="teal_900">#004D40</color>
+    <color name="teal_800">#00695C</color>
+    <color name="teal_700">#00796B</color>
+    <color name="teal_600">#00897B</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_400">#26A69A</color>
+    <color name="teal_300">#4DB6AC</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="teal_50">#E0F2F1</color>
+</resources>

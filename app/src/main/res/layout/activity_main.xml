@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/logo_barrier">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_camera_morse"
+            style="?materialCardViewOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_banner_height"
+                    android:contentDescription="@string/camera_morse"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/banner_camera_morse" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/text_camera_morse_title"
+                        style="?attr/textAppearanceTitleLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/text_horizontal_padding"
+                        android:paddingVertical="@dimen/text_vertical_padding"
+                        android:text="@string/camera_morse" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/text_camera_morse_description"
+                        style="?attr/textAppearanceBodyLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/text_horizontal_padding"
+                        android:paddingVertical="@dimen/text_vertical_padding"
+                        android:text="@string/description_camera_morse" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/colorLogoBackground"
+        app:layout_constraintBottom_toBottomOf="@id/logo_barrier"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorLogoForeground" />
+
+    <View
+        android:id="@+id/logo_text_guide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/logo_icon"
+        app:layout_constraintTop_toTopOf="@id/logo_icon"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/logo_text"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/text_vertical_padding"
+        android:text="@string/app_name"
+        android:textColor="?attr/colorLogoForeground"
+        app:fontFamily="@font/grenzegotisch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_text_guide" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/logo_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:barrierMargin="16dp"
+        app:constraint_referenced_ids="logo_text,logo_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
